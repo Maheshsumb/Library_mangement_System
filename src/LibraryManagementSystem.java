@@ -8,6 +8,7 @@ public class LibraryManagementSystem {
 		if (c!=null) {
 			System.out.println("Connected Succesfully....");
 			Menu m=new Menu();
+			Operations o=new Operations();
 			boolean exit=false;
 			while(!exit) {
 				int option=m.showMenu();
@@ -18,6 +19,7 @@ public class LibraryManagementSystem {
 			    }
 			    case 2: {
 			        System.out.println("<--- Check availability of book --->");
+			        o.displayAllBooks(c);
 			        break;
 			    }
 			    case 3: {
